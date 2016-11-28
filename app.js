@@ -65,7 +65,7 @@ function Service($http) {
 IndexController.$inject = ['$cookies'];
 function IndexController($cookies) {
 	var tokenCookie = $cookies.get('myVKappCookie');
-	var href = "https://twistedthought.github.io/test/friends.html#access_token="+tokenCookie+"&expires_in=0";
+	var href = "https://twistedthought.github.io/vk-test/friends.html#access_token="+tokenCookie+"&expires_in=0";
 	if (tokenCookie) {
 		window.location.assign(href);
 	};
