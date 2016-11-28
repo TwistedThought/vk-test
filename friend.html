@@ -1,0 +1,9 @@
+<div ng-repeat="friend in ctrl.friends" class="media">
+	<div class="media-left media-middle">
+		<a ng-href="https://vk.com/id{{friend.id}}" target="_blank"><img src="{{ friend.photo_100 }}"></a>
+	</div>
+	<div class="media-body media-middle">
+		<h4>{{ friend.first_name }} {{ friend.last_name }}</h4>
+	</div>
+	<hr>
+</div>
